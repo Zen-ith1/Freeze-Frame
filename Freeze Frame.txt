@@ -1,12 +1,11 @@
-Payloads:
+# Payloads:
 
 
-Title: Freeze Frame
+# Title: Freeze Frame
 
-Description: payload that shuts off the keyboard and mouse till restarted
+# Description: payload that shuts off the keyboard and mouse till restarted
 
 
-Ducky Code: 
 
 DELAY 2000
 REM Disable Keyboard and Mouse
