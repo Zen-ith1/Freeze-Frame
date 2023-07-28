@@ -1,9 +1,7 @@
-# Payloads:
-
-
 # Title: Freeze Frame
-
 # Description: payload that shuts off the keyboard and mouse till restarted
+#author: White_Wid0w
+#category: Executable
 
 
 
